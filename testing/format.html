@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #3b1d0a;
+        }
+
+        .main-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #5b390c;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .header {
+            height: 120px;
+            background: #523510;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        .circle {
+            width: 48px;
+            height: 48px;
+            background: #a3c9e3;
+            border-radius: 50%;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box-group {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-left: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 70px;
+            height: 50px;
+            background: #aed4e4;
+        }
+
+        .small-rect {
+            width: 120px;
+            height: 50px;
+            background: #8da3ad;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="content">
+            <header class="header">-9
+                <div class="header-left">
+                    <div class="circle"></div>
+                    <div class="box-group">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                    </div>
+                </div>
+                <div class="header-right"></div>>
+                <div class="circle"></div>
+                <div class="small-rect"></div>
+        </div>
+        </header>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: hsl(0, 6%, 85%);
+            border: 2px dotted #333;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            font-size: 20px;
+
+        }
+
+        #box1 {
+            background-color: red;
+            font-size: 10px;
+            position: static;
+
+        }
+
+        #box2 {
+            background-color: chocolate;
+            font-size: 10px;
+            position: relative;
+            top: 100px;
+            left: 1200px;
+        }
+
+        #box3 {
+            background-color: blueviolet;
+            font-size: 10px;
+            position: absolute;
+            top: 90px;
+            left: 250px;
+
+
+        }
+
+        #box4 {
+            background-color: lightseagreen;
+            font-size: 10px;
+            position: fixed;
+            top: 250px;
+            right: 50px;
+
+
+
+
+        }
+
+        #box5 {
+            background-color: lightgreen;
+            font-size: 10px;
+            position: static;
+            top: 100px;
+
+
+        }
+
+        #box6 {
+            background-color: lightyellow;
+            font-size: 10px;
+            position: static;
+            top: 100px;
+
+
+        }
+
+        #box7 {
+            background-color: lightblue;
+            font-size: 10px;
+            position: static;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box" id="box1">i am static</div>
+        <div class="box" id="box2">i am relative</div>
+        <div class="box" id="box3">i am absolute</div>
+        <div class="box" id="box4">i am fixed</div>
+        <div class="box" id="box4">i am fixed</div>
+        <div class="box" id="box5">i am static</div>
+        <div class="box" id="box6">i am static</div>
+        <div class="box" id="box7">i am static</div>
+
+    </div>
+</body>
+
+</html>

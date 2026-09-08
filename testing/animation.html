@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <meta name="description" content="A simple page showing a blue rotating circle loader while content loads.">
+    <style>
+        /* Full‑screen layout */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Loader container */
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #ccefff;
+            /* Light blue track */
+            border-top: 8px solid #2196f3;
+            /* Primary blue */
+            border-radius: 50%;
+            animation: spin 1.2s linear infinite;
+            box-shadow: 0 0 15px rgba(33, 150, 243, 0.4);
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader" aria-label="Loading"></div>
+</body>
+
+</html>
